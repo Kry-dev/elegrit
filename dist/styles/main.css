@@ -402,6 +402,13 @@ ul {
   height: 100%;
 }
 
+.section {
+  display: flex;
+  width: 100%;
+  min-height: 50vh;
+  padding-top: 70px;
+}
+
 *,
 *::before,
 *::after {
@@ -3102,6 +3109,19 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+}
+
+.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 0;
+}
+
 .btn-group,
 .btn-group-vertical {
   position: relative;
@@ -5543,6 +5563,32 @@ textarea.form-control.is-invalid {
   color: #6c757d;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  padding: .5rem 0;
+}
+
+.section-hero {
+  background: url("/img/general/hero-bg.png") no-repeat 20% 50%;
+  background-size: 50%;
+}
+
+.section-hero .jumbotron {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background: transparent;
+}
+
+.tool {
+  border-radius: 0.25rem;
+}
+
 @media (min-width: 576px) {
   .d-sm-none {
     display: none !important;
@@ -6354,6 +6400,10 @@ textarea.form-control.is-invalid {
 
   .offset-sm-11 {
     margin-left: 91.66667%;
+  }
+
+  .jumbotron {
+    padding: 4rem 2rem;
   }
 
   .modal-dialog {

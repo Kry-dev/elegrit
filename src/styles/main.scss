@@ -1,4 +1,4 @@
-@import "helpers/variables";
+//@import "helpers/variables";
 @import "helpers/mixins";
 @import "helpers/functions";
 @import "vendor/libs";
@@ -33,6 +33,6 @@
 @import "../../node_modules/bootstrap/scss/list-group";
 @import "../../node_modules/bootstrap/scss/images";
 
-
+@import "helpers/variables";
 @import "../blocks/components/components";
 @import "../blocks/modules/modules";

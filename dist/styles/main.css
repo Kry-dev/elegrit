@@ -415,6 +415,10 @@ ul {
   -webkit-text-fill-color: transparent;
 }
 
+.text-dark {
+  color: #222222;
+}
+
 *,
 *::before,
 *::after {
@@ -14205,7 +14209,7 @@ readers do not read off random characters that represent icons */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 1.5rem;
 }
 
 .tool i {
@@ -14224,6 +14228,18 @@ readers do not read off random characters that represent icons */
 .tool:hover {
   cursor: pointer;
   text-decoration: none;
+  background: #e96659;
+}
+
+.tool:hover .tool-title,
+.tool:hover .fa-gradient,
+.tool:hover p {
+  color: #fff;
+}
+
+.tool:hover .fa-gradient {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #fff;
 }
 
 @media (min-width: 576px) {

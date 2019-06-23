@@ -1,6 +1,6 @@
-//@import "helpers/variables";
 @import "helpers/mixins";
 @import "helpers/functions";
+@import "helpers/variables";
 @import "vendor/libs";
 @import "base/fonts";
 @import "base/general";
@@ -34,6 +34,14 @@
 @import "../../node_modules/bootstrap/scss/list-group";
 @import "../../node_modules/bootstrap/scss/images";
 
-@import "helpers/variables";
+//font-awesome imports
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+
+
+
 @import "../blocks/components/components";
 @import "../blocks/modules/modules";

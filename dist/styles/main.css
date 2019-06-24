@@ -14498,36 +14498,58 @@ readers do not read off random characters that represent icons */
   background-size: 50%;
 }
 
-.social {
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+.social-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.social-list__left .social-item {
+  transform: translateX(-1rem);
+}
+
+.social-list__left .social-item:nth-child(2) {
+  transform: translateX(-2rem);
+}
+
+.social-list__right .social-item {
+  transform: translateX(1rem);
+}
+
+.social-list__right .social-item:nth-child(2) {
+  transform: translateX(2rem);
+}
+
+.social-item {
   display: flex;
   flex-direction: row;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   position: relative;
   min-width: 260px;
   padding: 1.5625rem;
   margin-bottom: 2rem;
 }
 
-.social-icon {
+.social-item .social-icon {
   width: 50px;
   height: 50px;
   margin-right: 1rem;
 }
 
-.social-icon .svg {
+.social-item .social-icon .svg {
   width: 50px;
   height: 50px;
 }
 
-.social-descr {
+.social-item .social-descr {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
 
-.social-descr p {
+.social-item .social-descr p {
   font-size: 0.625rem;
   margin-bottom: 0;
 }

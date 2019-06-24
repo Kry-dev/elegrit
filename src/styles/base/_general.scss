@@ -35,7 +35,20 @@ h6 {font-size: $h6-font-size;}
     width: 100%;
     height: 100%;
 }
-
+.main {
+    background-image: url($main-top-bg-svg), url($main-btm-bg-svg);
+    background-position: top 50vh center, bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bg-top {
+    display: none;
+    //position: absolute;
+    //top: 0;
+    //display: flex;
+    //width: 100%;
+    //height: 100%;
+}
 .section {
     display: flex;
     width: 100%;

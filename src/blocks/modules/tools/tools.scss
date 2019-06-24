@@ -27,5 +27,9 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: $white;
         }
+        .btn-outline-secondary{
+            color: $white;
+            border-color: $white;
+        }
     }
 }

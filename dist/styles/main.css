@@ -14697,7 +14697,7 @@ readers do not read off random characters that represent icons */
 }
 
 .section-hero {
-  background: url("/img/general/hero-bg.png") no-repeat 20% 48%;
+  background: url("../img/general/hero-bg.png") no-repeat 20% 48%;
   background-size: 50%;
   min-height: 100vh;
 }

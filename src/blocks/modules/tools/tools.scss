@@ -28,8 +28,9 @@
             -webkit-text-fill-color: $white;
         }
         .btn-outline-secondary{
-            color: $white;
+            color: $danger;
             border-color: $white;
+            background: $white;
         }
     }
 }

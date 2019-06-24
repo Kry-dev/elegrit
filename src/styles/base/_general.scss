@@ -41,7 +41,11 @@ ul {
     background: -webkit-gradient(linear, left top, right bottom, from($red), to($orange));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    &:hover{
+        background: $white;
+    }
 }
+
 .text-dark{
     color: $gray-900;
 }

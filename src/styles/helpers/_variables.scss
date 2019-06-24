@@ -38,7 +38,7 @@ $red: #e96659;
 $orange: #f9b17a;
 $yellow: #ffc107;
 $green: #28a745;
-$teal: #20c997;
+$teal: #06bfab;
 $cyan: #17a2b8;
 
 $colors: () !default;
@@ -61,7 +61,7 @@ $colors: map-merge((
 
 $primary: $blue;
 $secondary: $gray-600;
-$success: $green;
+$success: $teal;
 $info: $cyan;
 $warning: $yellow;
 $danger: $red;
@@ -86,4 +86,7 @@ $theme-colors: map-merge((
 
 $body-bg:                   $white;
 $body-color:                $gray-600;
-$border-radius:               .25rem;
+$border-radius:               .5rem;
+$jumbotron-bg: transparent;
+$badge-font-size: 0.5625rem;
+$badge-padding-x: .75rem;

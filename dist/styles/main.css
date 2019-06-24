@@ -393,6 +393,31 @@ h6,
 ul {
   margin: 0;
   padding: 0;
+  color: #222222;
+}
+
+h1 {
+  font-size: 4.375rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.875rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
 }
 
 .wrapper {
@@ -832,17 +857,17 @@ h6,
 
 h1,
 .h1 {
-  font-size: 2.5rem;
+  font-size: 4.375rem;
 }
 
 h2,
 .h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h3,
 .h3 {
-  font-size: 1.75rem;
+  font-size: 2.875rem;
 }
 
 h4,
@@ -14471,6 +14496,40 @@ readers do not read off random characters that represent icons */
 .section-comp {
   background: url("/img/general/hero-bg.png") no-repeat 100% 50%;
   background-size: 50%;
+}
+
+.social {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  min-width: 260px;
+  padding: 1.5625rem;
+  margin-bottom: 2rem;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.social-icon .svg {
+  width: 50px;
+  height: 50px;
+}
+
+.social-descr {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.social-descr p {
+  font-size: 0.625rem;
+  margin-bottom: 0;
 }
 
 @media (min-width: 576px) {

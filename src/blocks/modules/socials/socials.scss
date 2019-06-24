@@ -1,0 +1,30 @@
+.social {
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    min-width: 260px;
+    padding: 1.5625rem;
+    margin-bottom: 2rem;
+    &-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 1rem;
+        .svg {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    &-descr {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        p {
+            font-size: 0.625rem;
+            margin-bottom: 0;
+        }
+    }
+
+}

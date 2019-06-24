@@ -1,0 +1,16 @@
+input,
+input::placeholder {
+    font-size: 0.875rem;
+}
+.input-group {
+    > &-text {
+        border: 0;
+        background-color: $white;
+    }
+    &-append {
+        .btn {
+            border-radius: $border-radius;
+            padding: .375rem .75rem;
+        }
+    }
+}

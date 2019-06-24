@@ -14755,7 +14755,7 @@ readers do not read off random characters that represent icons */
 }
 
 .section-comp {
-  background: url("/img/general/hero-bg.png") no-repeat 100% 50%;
+  background: url("../img/general/hero-bg.png") no-repeat 100% 50%;
   background-size: 50%;
 }
 
@@ -14817,7 +14817,7 @@ readers do not read off random characters that represent icons */
 }
 
 .trial {
-  background: url("/img/general/trial-bg.png") no-repeat bottom 35% center;
+  background: url("../img/general/trial-bg.png") no-repeat bottom 35% center;
   background-size: 75%;
 }
 

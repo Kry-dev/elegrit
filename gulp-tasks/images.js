@@ -34,18 +34,19 @@ gulp.task("images", () => {
                 progressive: true,
                 quality: 90
             }),
-            // imagemin.svgo({
-            //     plugins: [
-            //         { removeViewBox: false },
-            //         { removeUnusedNS: false },
-            //         { removeUselessStrokeAndFill: false },
-            //         { cleanupIDs: false },
-            //         { removeComments: true },
-            //         { removeEmptyAttrs: true },
-            //         { removeEmptyText: true },
-            //         { collapseGroups: true }
-            //     ]
-            // })
+            imagemin.svgo({
+                plugins: [
+                    { removeViewBox: false },
+                    { inline: true },
+                    { removeUnusedNS: false },
+                    { removeUselessStrokeAndFill: false },
+                    { cleanupIDs: false },
+                    { removeComments: true },
+                    { removeEmptyAttrs: true },
+                    { removeEmptyText: true },
+                    { collapseGroups: true }
+                ]
+            })
         ])))
         .pipe(gulp.dest(paths.images.dist))
         .pipe(debug({

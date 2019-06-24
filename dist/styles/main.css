@@ -14546,6 +14546,7 @@ readers do not read off random characters that represent icons */
   flex-direction: row;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background: #fff;
   position: relative;
   min-width: 260px;
   padding: 1.5625rem;
@@ -14573,6 +14574,15 @@ readers do not read off random characters that represent icons */
 .social-item .social-descr p {
   font-size: 0.625rem;
   margin-bottom: 0;
+}
+
+.trial {
+  background: url("/img/general/trial-bg.png") no-repeat bottom 35% center;
+  background-size: 75%;
+}
+
+.trial-phone-placehld {
+  transform: translate(35%, 50%);
 }
 
 @media (min-width: 576px) {

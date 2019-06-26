@@ -6062,11 +6062,107 @@ textarea.form-control.is-invalid {
 
 .header {
   position: fixed;
+  z-index: 20;
   top: 0;
   width: 100%;
-  height: 70px;
   background: #fff;
+  height: 70px;
   padding: .5rem 0;
+}
+
+.header .navbar-toggler {
+  position: relative;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.header .navbar-toggler[aria-expanded="true"] .toggle-line {
+  transform: rotate(45deg) translateZ(0);
+}
+
+.header .navbar-toggler[aria-expanded="true"] .toggle-line:last-child {
+  transform: rotate(-45deg) translateZ(0);
+}
+
+.header .navbar-toggler:hover,
+.header .navbar-toggler:focus {
+  outline: none;
+}
+
+.header .toggle-lines {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.625rem;
+  height: 1.625rem;
+  list-style: none;
+  margin: -.8125rem 0 0 -.8125rem;
+  padding: 0;
+  transform: translateZ(0);
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1), color 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header .toggle-lines .toggle-line {
+  position: absolute;
+  top: 50%;
+  background: #e96659;
+  width: 100%;
+  height: 2px;
+  margin-top: -.75px;
+  transform: translateY(-3.75px) translateZ(0);
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1), background 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header .toggle-lines .toggle-line:last-child {
+  transform: translateY(3.75px) translateZ(0);
+}
+
+.header .navbar-collapse.show {
+  background: #e96659;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.header .navbar-collapse.show .nav-item {
+  border-bottom: 1px solid #dee2e6;
+  padding: 0 1rem;
+}
+
+.header .navbar-collapse.show .nav-item:last-child {
+  border-bottom: 0;
+}
+
+.header .navbar-collapse.show .nav-item:hover,
+.header .navbar-collapse.show .nav-item:focus {
+  color: #e96659;
+  background: #fff;
+}
+
+.header .navbar-collapse.show .nav-item:hover .nav-link,
+.header .navbar-collapse.show .nav-item:hover .btn,
+.header .navbar-collapse.show .nav-item:focus .nav-link,
+.header .navbar-collapse.show .nav-item:focus .btn {
+  color: #e96659;
+  background: #fff;
+}
+
+.header .navbar-collapse.show .nav-item .btn {
+  margin: .5rem 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  color: #fff;
+  text-align: left;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.header .navbar-collapse.show .nav-link {
+  color: #fff;
 }
 
 .footer-bottom {

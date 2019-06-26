@@ -1,8 +1,96 @@
 .header {
     position: fixed;
+    z-index: 20;
     top: 0;
     width: 100%;
-    height: 70px;
     background: $white;
+    height: 70px;
     padding: .5rem 0;
+    .navbar-toggler {
+        position: relative;
+        width: 2.25rem;
+        height: 2.25rem;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        transition: all 0.5s ease;
+        cursor: pointer;
+        &[aria-expanded="true"] {
+            .toggle-line {
+                transform: rotate(45deg) translateZ(0);
+                &:last-child {
+                    transform: rotate(-45deg) translateZ(0);
+                }
+            }
+        }
+        &:hover,
+        &:focus {
+            outline: none;
+        }
+    }
+    .toggle-lines {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1.625rem;
+        height: 1.625rem;
+        list-style: none;
+        margin: -.8125rem 0 0 -.8125rem;
+        padding: 0;
+        transform: translateZ(0);
+        transition: transform 1s cubic-bezier(.23, 1, .32, 1), color 1s cubic-bezier(.23, 1, .32, 1);
+        .toggle-line {
+            position: absolute;
+            top: 50%;
+            background: $danger;
+            width: 100%;
+            height: 2px;
+            margin-top: -.75px;
+            transform: translateY(-3.75px) translateZ(0);
+            transition: transform 1s cubic-bezier(.23, 1, .32, 1), background 1s cubic-bezier(.23, 1, .32, 1);
+            &:last-child {
+                transform: translateY(3.75px) translateZ(0);
+            }
+        }
+    }
+    .navbar-collapse.show {
+        background: $danger;
+        box-shadow: $box-shadow;
+        .nav-item {
+            border-bottom: 1px solid $border-color;
+            padding: 0 1rem;
+            &:last-child {
+                border-bottom: 0;
+            }
+            &:hover,
+            &:focus {
+                color: $danger;
+                background: $white;
+                .nav-link,
+                .btn {
+                    color: $danger;
+                    background: $white;
+
+                }
+            }
+            .btn {
+                margin: .5rem 0;
+                border: none;
+                border-radius: 0;
+                background: transparent;
+                color: $white;
+                text-align: left;
+                width: 100%;
+                padding: 0.5rem 1rem;
+                //&:hover,
+                //&:focus {
+                //    background: $danger;
+                //    color: $white;
+                //}
+            }
+        }
+        .nav-link {
+            color: $white;
+        }
+    }
 }

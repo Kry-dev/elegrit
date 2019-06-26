@@ -29,6 +29,11 @@ h3 {font-size: $h3-font-size;}
 h4 {font-size: $h4-font-size;}
 h5 {font-size: $h5-font-size;}
 h6 {font-size: $h6-font-size;}
+@include media-breakpoint-down(md) {
+    h1 {font-size: 2.8125rem;}
+    h2 {font-size: 2.5rem;}
+    h3 {font-size: 2.375rem;}
+}
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -53,6 +58,9 @@ h6 {font-size: $h6-font-size;}
     &-title {
         color: $title-color;
         margin-bottom: 3rem;
+        @include media-breakpoint-down(sm) {
+            text-align: center;
+        }
     }
     &-descr{
         margin-bottom: 3rem;

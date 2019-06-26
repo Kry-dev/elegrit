@@ -1,19 +1,15 @@
+//
 @import "helpers/mixins";
 @import "helpers/functions";
 @import "helpers/variables";
-@import "vendor/libs";
-@import "base/fonts";
-@import "base/general";
-@import "base/icons";
-@import "base/badge";
-@import "base/input";
 
 //bootstrap 4 styles
 
 // Required
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/_variables";
+@import "../../node_modules/bootstrap/scss/_mixins";
+@import "../../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
 // Optional
 @import "../../node_modules/bootstrap/scss/reboot";
 @import "../../node_modules/bootstrap/scss/type";
@@ -39,6 +35,13 @@
 @import "../../node_modules/bootstrap/scss/list-group";
 @import "../../node_modules/bootstrap/scss/images";
 
+
+@import "vendor/libs";
+@import "base/fonts";
+@import "base/general";
+@import "base/icons";
+@import "base/badge";
+@import "base/input";
 
 @import "../blocks/components/components";
 @import "../blocks/modules/modules";

@@ -28,6 +28,7 @@ module.exports = {
 
     resolve: {
         alias: {
+            "%libs%": path.resolve(__dirname, "src/blocks/libs"),
             "%modules%": path.resolve(__dirname, "src/blocks/modules"),
             "%components%": path.resolve(__dirname, "src/blocks/components")
         }

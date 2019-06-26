@@ -6070,6 +6070,11 @@ textarea.form-control.is-invalid {
   padding: .5rem 0;
 }
 
+.header .navbar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .header .navbar-toggler {
   position: relative;
   width: 2.25rem;
@@ -6122,6 +6127,12 @@ textarea.form-control.is-invalid {
   transform: translateY(3.75px) translateZ(0);
 }
 
+.header .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header .navbar-collapse.show {
   background: #e96659;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -6129,6 +6140,7 @@ textarea.form-control.is-invalid {
 
 .header .navbar-collapse.show .nav-item {
   border-bottom: 1px solid #dee2e6;
+  justify-content: flex-start;
   padding: 0 1rem;
 }
 

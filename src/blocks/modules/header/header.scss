@@ -6,6 +6,10 @@
     background: $white;
     height: 70px;
     padding: .5rem 0;
+    .navbar {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .navbar-toggler {
         position: relative;
         width: 2.25rem;
@@ -53,11 +57,17 @@
             }
         }
     }
+    .nav-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .navbar-collapse.show {
         background: $danger;
         box-shadow: $box-shadow;
         .nav-item {
             border-bottom: 1px solid $border-color;
+            justify-content: flex-start;
             padding: 0 1rem;
             &:last-child {
                 border-bottom: 0;

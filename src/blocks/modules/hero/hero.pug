@@ -1,9 +1,12 @@
 section.section.section-hero
     .container
         .row.my-auto
-            .col-md-5
-                img.img-fluid(src="img/general/white-ph.png", alt="iphone")
-            .col-md-6.offset-1
+            .col-md-6.col-sm-12
+                .video-container
+                    .video-content
+                        video( playsinline='playsinline', autoplay='autoplay', muted='muted', loop='loop')
+                            source(src='https://storage.googleapis.com/coverr-main/mp4%2FHway.mp4', type='video/mp4')
+            .col-md-6.col-sm-12
                 .jumbotron.my-auto
                     h1.section-title Native #[b Apps] #[br] for #[b Pro-Business].
                     p.section-descr Trusted by #[b  minion customers.] Nunc eget porttitor risus. Vivamus laoreet, neque et pellentesqu...

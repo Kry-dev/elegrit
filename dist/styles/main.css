@@ -8,6 +8,15 @@
 
 @import "https://use.fontawesome.com/releases/v5.6.3/css/v4-shims.css";
 
+#svg-placeholder {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  z-index: -9999999;
+  width: 0;
+  height: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -5963,6 +5972,8 @@ h6 {
 
 .section .container {
   margin: auto;
+  position: relative;
+  z-index: 2;
 }
 
 .section-title {
@@ -6058,6 +6069,38 @@ input::placeholder {
 .input-group-append .btn {
   border-radius: 0.5rem;
   padding: .375rem .75rem;
+}
+
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 434px;
+  height: 806px;
+  overflow: hidden;
+  background: url("../img/sprites/sprite.svg#iphone-white") center center no-repeat;
+  background-size: cover;
+  padding: 14px 14px 14px 30px;
+  margin-right: auto;
+}
+
+.video-container .video-content {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: -1;
+  width: 370px;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 5%;
+  background: #000;
+}
+
+.video-container video {
+  min-width: 120%;
+  height: 100%;
 }
 
 .header {
@@ -10063,6 +10106,13 @@ input::placeholder {
 
   h3 {
     font-size: 2.375rem;
+  }
+
+  .video-container {
+    width: 260px;
+    height: 483px;
+    margin: 0 auto;
+    padding: 10px 10px 10px 22px;
   }
 }
 

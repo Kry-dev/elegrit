@@ -54,6 +54,8 @@ h6 {font-size: $h6-font-size;}
     margin-bottom: 3rem;
     .container {
         margin: auto;
+        position: relative;
+        z-index: 2;
     }
     &-title {
         color: $title-color;

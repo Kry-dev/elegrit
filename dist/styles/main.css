@@ -6078,7 +6078,6 @@ input::placeholder {
   position: relative;
   width: 434px;
   height: 806px;
-  overflow: hidden;
   background: url("../img/sprites/sprite.svg#iphone-white") center center no-repeat;
   background-size: cover;
   padding: 14px 14px 14px 30px;
@@ -6096,6 +6095,7 @@ input::placeholder {
   overflow: hidden;
   border-radius: 5%;
   background: #000;
+  box-shadow: -25px 30px 40px grey;
 }
 
 .video-container video {

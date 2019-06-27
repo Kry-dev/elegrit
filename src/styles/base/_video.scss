@@ -5,11 +5,11 @@
     position: relative;
     width: 434px;
     height: 806px;
-    overflow: hidden;
     background: url("../img/sprites/sprite.svg#iphone-white") center center no-repeat;
     background-size: cover;
     padding: 14px 14px 14px 30px;
     margin-right: auto;
+
     @include media-breakpoint-down(md) {
         width: 260px;
         height: 483px;
@@ -29,6 +29,7 @@
         overflow: hidden;
         border-radius: 5%;
         background: $black;
+        box-shadow: -25px 30px 40px grey;
     }
     video {
         min-width: 120%;

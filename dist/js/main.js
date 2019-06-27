@@ -17808,7 +17808,24 @@ module.exports = g;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+window.onscroll = function () {
+  myFunction();
+}; // Get the navbar
 
+
+var navbar = document.getElementById("header"); // Get navbar height
+
+var navHeight = navbar.offsetHeight; // Get the offset position of the navbar
+
+var shadow = navbar.offsetTop + navHeight; // Add the shadow class to the navbar when you reach its scroll position. Remove "shadow" when you leave the scroll position
+
+function myFunction() {
+  if (window.pageYOffset >= shadow) {
+    navbar.classList.add("shadow");
+  } else {
+    navbar.classList.remove("shadow");
+  }
+}
 
 /***/ }),
 

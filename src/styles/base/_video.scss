@@ -9,7 +9,6 @@
     background-size: cover;
     padding: 14px 14px 14px 30px;
     margin-right: auto;
-
     @include media-breakpoint-down(md) {
         width: 260px;
         height: 483px;

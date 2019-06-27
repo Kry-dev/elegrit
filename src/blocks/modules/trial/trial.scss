@@ -3,5 +3,8 @@
     background-size: 75%;
     &-phone-placehld {
         transform: translate(35%, 50%);
+        @include media-breakpoint-down(sm) {
+            max-width: 50%;
+        }
     }
 }

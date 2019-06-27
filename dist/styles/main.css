@@ -10158,6 +10158,10 @@ input::placeholder {
   .social-list__right .social-item:nth-child(2) {
     transform: translateX(1rem);
   }
+
+  .trial-phone-placehld {
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 575.98px) {

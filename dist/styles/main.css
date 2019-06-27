@@ -10138,6 +10138,11 @@ input::placeholder {
     text-align: center;
   }
 
+  .footer-bottom {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
   .social-list__left .social-item {
     transform: translateX(0);
   }
